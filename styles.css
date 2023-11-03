@@ -1,10 +1,16 @@
 * {
     font-family: "Roboto", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
     background-color: #1F2937;
     color: white;
+}
+
+.top-row {
+    flex-direction: row;
 }
 
 .logo
@@ -14,16 +20,16 @@
 
 .logo {
     font-size: 24px;
+    text-align: left;
 }
 
 .main-text
-.title {
+.image-title {
     font-weight: bolder;
 }
 
 .main-text {
     font-size: 48px;
-  
 }
 
 .secondary-text,
@@ -35,37 +41,44 @@
 }
 
 .link {
-    color: #e5e7eb
+    color: #e5e7eb;
+    text-align: right;
+    padding: 10px;
 }
 /*Why aren't the links showing in this colour?*/
 
-.images,
+.image-section,
 .quote,
-.intro {
+.intro,
+.sign-up {
     padding: 30px;
 }
 
-/*.quote {
-    padding: 30px;
-}
-
-.intro {
-    padding: 30px;
-}
-
-.images {
-    padding: 30px;
-} */
-
-.title,
+.image-title,
 .quote {
     font-size: 36px;
 }
 
-.title {
+.image-title {
     color: #1f2937;
     font-size: 22px;
     text-align: center;
+    flex-direction: column;
+}
+
+.images,
+.intro {
+    flex-direction: row;
+}
+
+.intro-left,
+.intro-right {
+    flex-direction: column;
+}
+
+.image-1 {
+    margin: 15px;
+    flex-direction: column;
 }
 
 .caption {
@@ -89,12 +102,20 @@
 .button {
     background-color: #3882F6;
     color: #E5E7EB;
+    width: 100px;
 }
+
+/* button needs size fixing, and aligning centrally in its column*/
 
 .sign-up {
     background-color: #3882F6;
     color: #E5E7EB;
     margin: 30px;
+    flex-direction: row;
+}
+
+.sign-up-text {
+    flex-direction: column;
 }
 
 /*There's some depth here I haven't grasped about why I can't have the button and sign-up
