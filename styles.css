@@ -26,9 +26,9 @@
   
 }
 
-.secondary-text
-.link
-.footer 
+.secondary-text,
+.link,
+.footer, 
 .sign-up {
     font-size: 18px;
     color: #E5E7EB;
@@ -39,7 +39,25 @@
 }
 /*Why aren't the links showing in this colour?*/
 
-.title
+.images,
+.quote,
+.intro {
+    padding: 30px;
+}
+
+/*.quote {
+    padding: 30px;
+}
+
+.intro {
+    padding: 30px;
+}
+
+.images {
+    padding: 30px;
+} */
+
+.title,
 .quote {
     font-size: 36px;
 }
@@ -47,7 +65,7 @@
 .title {
     color: #1f2937;
     font-size: 22px;
-    text-align: right;
+    text-align: center;
 }
 
 .caption {
@@ -64,6 +82,7 @@
 
 .source {
     font-weight: bold;
+    text-align: right;
 }
 
 
@@ -75,6 +94,7 @@
 .sign-up {
     background-color: #3882F6;
     color: #E5E7EB;
+    margin: 30px;
 }
 
 /*There's some depth here I haven't grasped about why I can't have the button and sign-up
